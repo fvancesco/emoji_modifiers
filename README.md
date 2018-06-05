@@ -3,6 +3,8 @@
 
 The following repository includes the pre-trained embeddings from the paper *[How Gender and Skin Tone Modifiers Affect Emoji Semantics in Twitter](http://aclweb.org/anthology/S18-2011)*  (*SEM 2018).
 
+![alt text](diff.png)
+
 ### Use our embeddings
 
 We release the two sets of 100-dimensional SW2V embeddings trained on Twitter:
