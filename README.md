@@ -1,7 +1,9 @@
 ## How Gender and Skin Tone Modifiers Affect Emoji Semantics in Twitter 
 #### Francesco Barbieri and Jose Camacho Collados
 
-The following repository includes the pre-trained embeddings from the paper *How Gender and Skin Tone Modifiers Affect Emoji Semantics in Twitter*  (*SEM 2018).
+The following repository includes the pre-trained embeddings from the paper *[How Gender and Skin Tone Modifiers Affect Emoji Semantics in Twitter](http://aclweb.org/anthology/S18-2011)*  (*SEM 2018).
+
+Paper: 
 
 ### Use our embeddings
 
@@ -40,8 +42,6 @@ sw2v -train $INPUT -output $OUTPUT -cbow 1 -size 100 -window 6 -negative 0 -hs 1
 #### Coming soon:
 - [ ] Links to embeddings (by the end of this week)
 - [ ] Code for raw dataset filtering prior training
- 
-For more information please check the main reference paper: http://aclweb.org/anthology/S18-2011
 
 If you use any of the resources from this page, please cite the reference paper:
 ```bash
