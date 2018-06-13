@@ -20,6 +20,10 @@ Notes:
 - All words are lowercased.
 - For obtaining the original emoji and modifier encoding from the embeddings, you can use the following mapping (COMING SOON).
 
+When you run example.py (with python3) the output should be the following:
+<img src="output.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" />
+
+
 ### Train New Embeddings
 
 We used the original SW2V code for training the embeddings: http://lcl.uniroma1.it/sw2v/ . We used the SW2V code with the following parameters, run from the terminal as follows:
