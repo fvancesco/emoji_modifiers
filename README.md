@@ -11,18 +11,17 @@ The following repository includes the pre-trained embeddings from the paper *[Ho
 We release the two sets of 100-dimensional SW2V embeddings trained on Twitter:
 
 1. Word, base emoji and modifier embeddings.
- The vocabulary includes words (e.g. house, car, ...), base emojis (without sex or skin tone modifiers, e.g. 👍), and Modifiers (e.g. male/female, or light/dark skin tone). Download embeddings here: COMING SOON [~300 MB]
+ The vocabulary includes words (e.g. house, car, ...), base emojis (without sex or skin tone modifiers, e.g. 👍), and Modifiers (e.g. male/female, or light/dark skin tone). Download embeddings [here](https://drive.google.com/open?id=1xcxfMyewMFgWjVg_UqtIBz273z0jq4x-) [~300 MB]
 
 2. Word and emoji (base and modified) embeddings.
-The vocabulary includes words (e.g. house, car, ...) and emojis, both base (without sex or skin tone modifiers, e.g. 👍), and with modifiers (e.g.  👍🏻,👍🏽,👍🏿). Download embeddings here: COMING SOON [~300 MB]
+The vocabulary includes words (e.g. house, car, ...) and emojis, both base (without sex or skin tone modifiers, e.g. 👍), and with modifiers (e.g.  👍🏻,👍🏽,👍🏿). Download embeddings [here](https://drive.google.com/open?id=1UuO9EKrJGElAjrjSJ4PspQZ4dNLGo3ya) [~300 MB]
 
 Notes:
 - All words are lowercased.
 - For obtaining the original emoji and modifier encoding from the embeddings, you can use the following mapping (COMING SOON).
 
 When you run example.py (with python3) the output should be the following:
-<img src="output.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" />
-
+<img src="output.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" />
 
 ### Train New Embeddings
 
@@ -44,11 +43,7 @@ OUTPUT="word_emoji_embedding_s1.bin"
 sw2v -train $INPUT -output $OUTPUT -cbow 1 -size 100 -window 6 -negative 0 -hs 1 -threads $TH -binary 1 -iter 5 -update 0 -senses 1 -synsets_input 1 -synsets_target 1
 ```
 
-#### Coming soon:
-- [ ] Links to embeddings (by the end of this week)
-- [ ] Code for raw dataset filtering prior training
-
-If you use any of the resources from this page, please cite the reference paper:
+The provided models are freely available under [Creative Commons CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), using the reference below for attribution:
 ```bash
 @InProceedings{barbieri:sem2018,
   author = 	"Barbieri, Francesco
