@@ -3,7 +3,6 @@
 
 The following repository includes the pre-trained embeddings from the paper *[How Gender and Skin Tone Modifiers Affect Emoji Semantics in Twitter](http://aclweb.org/anthology/S18-2011)*  (*SEM 2018).
 
-
 <img src="diff.png" width="500">
 
 ### Use our embeddings
@@ -18,7 +17,7 @@ The vocabulary includes words (e.g. house, car, ...) and emojis, both base (with
 
 Notes:
 - All words are lowercased.
-- For obtaining the original emoji and modifier encoding from the embeddings, you can use the following mapping (COMING SOON).
+- For obtaining the original emoji and modifier encoding from the embeddings, you can use the following [mapping](mapping.tsv) (tab separated: frequency ranking, emoji, cldr, emoji code with modifiers, emoji code without modifiers).
 
 When you run example.py (with python3) the output should be the following:
 <img src="output.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" />
