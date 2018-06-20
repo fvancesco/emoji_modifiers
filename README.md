@@ -35,7 +35,7 @@ OUTPUT="word_emoji_embedding_s0.bin"
 sw2v -train $INPUT -output $OUTPUT -cbow 1 -size 100 -window 6 -negative 0 -hs 1 -threads $TH -binary 1 -iter 5 -update 0 -senses 0 -synsets_input 1 -synsets_target 1
 ```
 
-Word and emoji (base and modified) embeddings.
+Word and emoji (base and modified) embeddings (2):
 ```bash
 TH=1 #threads
 INPUT="tweets.txt"
