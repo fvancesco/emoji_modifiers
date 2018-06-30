@@ -20,6 +20,7 @@ Notes:
 - For obtaining the original emoji and modifier encoding from the embeddings, you can use the following [mapping](mapping.tsv) (tab separated: frequency ranking, emoji, cldr, emoji code with modifiers, emoji code without modifiers).
 
 When you run example.py (with python3) the output should be the following:
+
 <img src="output.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" />
 
 ### Train New Embeddings
