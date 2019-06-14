@@ -29,18 +29,16 @@ We used the original SW2V code for training the embeddings: http://lcl.uniroma1.
 
 1. Word, base emoji and modifier embeddings: 
 ```bash
-TH=1 #threads
 INPUT="tweets.txt"
 OUTPUT="word_emoji_embedding_s0.bin"
-sw2v -train $INPUT -output $OUTPUT -cbow 1 -size 100 -window 6 -negative 0 -hs 1 -threads $TH -binary 1 -iter 5 -update 0 -senses 0 -synsets_input 1 -synsets_target 1
+sw2v -train $INPUT -output $OUTPUT -cbow 1 -size 100 -window 6 -negative 0 -hs 1 -threads 1 -binary 1 -iter 5 -update 0 -senses 0 -synsets_input 1 -synsets_target 1
 ```
 
 2. Word and emoji (base and modified) embeddings:
 ```bash
-TH=1 #threads
 INPUT="tweets.txt"
 OUTPUT="word_emoji_embedding_s1.bin"
-sw2v -train $INPUT -output $OUTPUT -cbow 1 -size 100 -window 6 -negative 0 -hs 1 -threads $TH -binary 1 -iter 5 -update 0 -senses 1 -synsets_input 1 -synsets_target 1
+sw2v -train $INPUT -output $OUTPUT -cbow 1 -size 100 -window 6 -negative 0 -hs 1 -threads 1 -binary 1 -iter 5 -update 0 -senses 1 -synsets_input 1 -synsets_target 1
 ```
 
 The provided models are freely available under [Creative Commons CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), using the reference below for attribution:
